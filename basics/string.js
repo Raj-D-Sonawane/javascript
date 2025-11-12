@@ -31,10 +31,10 @@
 
 
 
-let str = "hello"
-let reversed = str.split('').reverse().join('');
-console.log(reversed);
-console.log(str);
+// let str = "hello"
+// let reversed = str.split('').reverse().join('');
+// console.log(reversed);
+// console.log(str);
 
 /*
 split('')-> converts string to array -> [h, e ,l, l, o]
@@ -42,6 +42,21 @@ reverse() -> reverse the array [0, l, l, e,h]
 join() -> joins elements back into a string
 
 */
+
+let str ="hello";
+// let reversed = str.split('')
+// console.log(reversed);
+// let join = reversed.reverse()
+// console.log(join);
+// let finalString = join.join('')
+// console.log(finalString);
+
+
+let reversed = "";
+for (let i = str.length-1; i >= 0; i--){
+    reversed = reversed + str[i];
+}
+console.log(reversed);
 
 
 
