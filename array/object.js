@@ -40,8 +40,19 @@ const user = [
 ]
 // console.log(user[0].id)
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+
+
+const course = {
+    Coursename : "js in hindi",
+    Price : "999",
+    courseInstructor : "hitesh"
+}
+
+// const  {courseInstructor} = course
+const  {courseInstructor : obj} = course
+console.log(obj);
 
