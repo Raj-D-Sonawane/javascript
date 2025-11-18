@@ -11,16 +11,27 @@
 // console.log(c);
 
 
-function one () {
-    const userName = "raj"
-    function two() {
-        const website = "youtube"
-        console.log(userName)
-    }
-    // console.log(website);
-    two()
+// function one() {
+//     const userName = "raj"
+//     function two(){
+//           const website = "youtube"
+//           console.log(userName);
+          
+//     }
+//     // console.log(website);
+//     two()
     
+// }
+
+// one()
+console.log(addone(5))
+
+
+function addone(value){
+    return value + 1
 }
 
-one()
-
+addTwo(5)
+const addTwo = function(num){
+    return num + 2
+}
