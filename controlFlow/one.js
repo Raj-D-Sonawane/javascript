@@ -45,13 +45,32 @@ const debitCard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-if ( userLoggedIn && debitCard)
+if ( userLoggedIn && debitCard) //and oprator sagdy condition true aslya pahije
 {
-    console.log("Allow to buy course");
+    // console.log("Allow to buy course");
     
 }
 
-if (loggedInFromGoogle || loggedInFromEmail) {
-    console.log("user logged in");
+if (loggedInFromGoogle || loggedInFromEmail)  // or operator konti pan ek condition true asli pahije
+    {
+    // console.log("user logged in");
     
 }
+
+//  Nullish coalescing operator (??): null undefined
+
+let val1;
+// val1 = 5 ?? 10
+// val1 = null ?? 10
+//val1 = undefined ?? 15
+val1 = null ?? 10 ?? 20
+
+// console.log(val1);
+
+// Terniary Operator
+
+// condition ? true : false
+
+const ice = 100
+ice <= 80 ? console.log("less than 80") : console.log("more than 80");
+
