@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form Submit Prevent Example</h2>
+    <form id="myForm">
+        <input type="text" placeholder="EnterName">
+        <button type="submit">submit</button>
+    </form>
+    <a id="myLink" href="https://google.com">Click to go Google</a>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", (e)=>{
+            e.preventDefault();
+             console.log("Form submit थांबवला!");
+            alert("Form submit झाला नाही कारण preventDefault वापरला आहे!");
+        })
+
+        document.getElementById("myLink").addEventListener("click", (e)=>{
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>
